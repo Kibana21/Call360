@@ -1,0 +1,40 @@
+{
+  "id": "ilp_nftf_digital",
+  "title": "ILP · Non-face-to-face · Video call sale",
+  "product": "Investment-Linked Policy",
+  "channel": "Non-face-to-face (NFTF)",
+  "tags": [
+    "ILP",
+    "NFTF",
+    "Digital"
+  ],
+  "focus": "Verify the non-face-to-face process was sound: identity checked on video, documents shown on screen, client signed on their own device, no Singpass/OTP sharing. Also check whether a financial health review was done remotely before the ILP was recommended.",
+  "profile": {
+    "client_name": "Priya Nair",
+    "dob": "2 August 1985",
+    "age": 41,
+    "policy_name": "SmartInvest ILP (demo plan)",
+    "insurer": "AIA Singapore",
+    "application_no": "AIA-ILP-241102",
+    "agent_name": "Marcus Goh",
+    "premium": "$12,000",
+    "frequency": "annually",
+    "term": "15 years",
+    "purchase_date": "20 November 2026",
+    "selected_client": false
+  },
+  "roleplay_tips": [
+    "Say it was mostly over WhatsApp messages",
+    "Say you read an OTP out to the agent so he could 'help submit'",
+    "Say the Benefit Illustration was only emailed afterwards"
+  ],
+  "sections": [
+    "identity",
+    "channel_nftf",
+    "fna",
+    "product_ilp",
+    "commitments",
+    "free_look",
+    "closing"
+  ]
+}

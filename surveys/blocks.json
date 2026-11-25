@@ -1,0 +1,373 @@
+{
+  "identity": {
+    "name": "Identity & consent",
+    "questions": [
+      {
+        "id": "id_confirm",
+        "text": "Can you confirm your full name and date of birth, please?",
+        "check": "Matches {client_name}, born {dob}.",
+        "red_flag_if": "Details don't match, or someone else is answering on the client's behalf."
+      },
+      {
+        "id": "voluntary_application",
+        "text": "Do you confirm you voluntarily applied for {policy_name} on {purchase_date} through our representative, {agent_name}?",
+        "check": "Clear yes, recognises the agent and the plan.",
+        "red_flag_if": "Says they didn't apply, felt forced, or doesn't recognise the agent or the plan."
+      }
+    ]
+  },
+  "fna": {
+    "name": "Financial health review (Fact-find / FNA)",
+    "questions": [
+      {
+        "id": "fna_discussion",
+        "text": "Before recommending this plan, did {agent_name} go through your financial goals, monthly budget, existing insurance and savings with you?",
+        "check": "Client describes a real discussion covering goals, budget, existing cover.",
+        "red_flag_if": "No discussion, only very brief, or the agent 'filled it in' without asking. Strong mis-selling indicator.",
+        "missell": true
+      },
+      {
+        "id": "fna_document",
+        "text": "Did you receive a copy of the Financial Needs Analysis form, and do the details in it, like your income and commitments, match what you told the agent?",
+        "check": "Received it; details accurate.",
+        "red_flag_if": "Never received, never saw it, or details were wrong or inflated (e.g. income overstated to justify the premium).",
+        "missell": true
+      },
+      {
+        "id": "existing_cover",
+        "text": "Did the agent ask what other insurance policies or investments you already have, including CPF savings?",
+        "check": "Agent reviewed existing cover/investments.",
+        "red_flag_if": "Agent never asked about existing coverage or investments.",
+        "missell": true
+      }
+    ]
+  },
+  "commitments": {
+    "name": "Policy commitments & affordability",
+    "questions": [
+      {
+        "id": "not_a_deposit",
+        "text": "Just to check your understanding, this is an insurance policy and not a bank savings account or fixed deposit, correct?",
+        "check": "Understands it's insurance.",
+        "red_flag_if": "Believes it is a fixed deposit, savings account or government scheme."
+      },
+      {
+        "id": "premium_recall",
+        "text": "In your own words, could you tell me how much the premium is, how often you pay, and for how many years?",
+        "check": "Roughly {premium} {frequency} for {term}. Ask open-ended; don't read the figures out first.",
+        "red_flag_if": "Cannot state the premium or payment term within a reasonable margin."
+      },
+      {
+        "id": "affordability",
+        "text": "Are you comfortable paying this premium for the whole payment term without it affecting your daily living expenses?",
+        "check": "Comfortable; premium is a sensible share of income.",
+        "red_flag_if": "Says it will be a stretch, is using savings meant for emergencies, or premium looks unaffordable.",
+        "missell": true
+      }
+    ]
+  },
+  "conduct": {
+    "name": "Sales conduct & inducements",
+    "questions": [
+      {
+        "id": "explained_no_pressure",
+        "text": "Did the agent explain the features, exclusions and risks clearly, and did you feel any pressure to sign?",
+        "check": "Explained clearly, no pressure.",
+        "red_flag_if": "Felt rushed or pressured, e.g. 'promotion ends today', or risks were glossed over."
+      },
+      {
+        "id": "inducements",
+        "text": "Were you offered any cash rebates, gifts or vouchers for buying this plan?",
+        "check": "No inducements.",
+        "red_flag_if": "Any cash rebate, premium refund, gift or voucher offered or promised."
+      }
+    ]
+  },
+  "free_look": {
+    "name": "Free-look rights",
+    "questions": [
+      {
+        "id": "free_look",
+        "text": "Are you aware you have 14 days from receiving your policy documents to cancel and get a full refund of premiums, less any medical or admin costs?",
+        "check": "Aware. If not, explain it clearly before moving on.",
+        "red_flag_if": "Not aware (flag as concern and explain it)."
+      }
+    ]
+  },
+  "closing": {
+    "name": "Closing check",
+    "questions": [
+      {
+        "id": "final_concerns",
+        "text": "Is there anything about the policy you're unsure about, or that you'd like us to re-explain or follow up on?",
+        "check": "No concerns.",
+        "red_flag_if": "Expresses hesitation, confusion, regret, or wants to cancel."
+      }
+    ]
+  },
+  "channel_f2f": {
+    "name": "Channel: Face-to-face meeting",
+    "questions": [
+      {
+        "id": "f2f_location",
+        "text": "Where did you meet {agent_name} to discuss this plan? At home, an office, a café?",
+        "check": "Private, appropriate setting.",
+        "red_flag_if": "Hurried public setting with no privacy (flag concern)."
+      },
+      {
+        "id": "f2f_time_to_consider",
+        "text": "How long did the discussion take, and did you have enough time to read the documents before signing?",
+        "check": "Adequate time; could take documents home if wished.",
+        "red_flag_if": "Signed within a short single sitting with no time to read, or told to sign immediately.",
+        "missell": true
+      },
+      {
+        "id": "f2f_bi_walkthrough",
+        "text": "Did the agent go through the Product Summary and Benefit Illustration with you, page by page?",
+        "check": "Documents walked through and explained.",
+        "red_flag_if": "Documents not shown, or just 'sign here' pages.",
+        "missell": true
+      }
+    ]
+  },
+  "channel_nftf": {
+    "name": "Channel: Non-face-to-face (video / digital)",
+    "questions": [
+      {
+        "id": "nftf_mode",
+        "text": "Was this plan discussed with you over a video call, phone call, or fully online?",
+        "check": "Mode recorded; video call preferred for NFTF.",
+        "red_flag_if": "Only text chat / messaging with no live explanation (flag concern)."
+      },
+      {
+        "id": "nftf_identity_on_camera",
+        "text": "At the start of the call, did the agent verify your identity, for example by asking you to show your NRIC on camera?",
+        "check": "Identity verified at the start.",
+        "red_flag_if": "No identity verification (concern)."
+      },
+      {
+        "id": "nftf_screen_share",
+        "text": "Were the Benefit Illustration and Product Summary shown to you on screen and explained before you authorised payment?",
+        "check": "Shared on screen and explained.",
+        "red_flag_if": "Documents only emailed afterwards, or never explained.",
+        "missell": true
+      },
+      {
+        "id": "nftf_self_signed",
+        "text": "Did you personally review and e-sign the application on your own device?",
+        "check": "Client signed on own device.",
+        "red_flag_if": "Agent signed or submitted on the client's behalf."
+      },
+      {
+        "id": "nftf_singpass_otp",
+        "text": "At any point, did you share your Singpass login or a one-time password with the agent?",
+        "check": "Never shared.",
+        "red_flag_if": "Shared Singpass credentials or any OTP with the agent. Always a red flag."
+      }
+    ]
+  },
+  "channel_roadshow": {
+    "name": "Channel: Roadshow / public place",
+    "questions": [
+      {
+        "id": "roadshow_where",
+        "text": "Where did you meet the representative? For example a mall roadshow or near an MRT station?",
+        "check": "Location recorded.",
+        "red_flag_if": "n/a, informational"
+      },
+      {
+        "id": "roadshow_approached",
+        "text": "Were you approached while walking past, and did you feel you had enough time and privacy to think it over before signing?",
+        "check": "Had time and privacy.",
+        "red_flag_if": "Signed on the spot after being approached, felt rushed, or no privacy for personal details.",
+        "missell": true
+      },
+      {
+        "id": "roadshow_identified",
+        "text": "Did the person clearly introduce themselves as an insurance representative, not as a surveyor or bank staff?",
+        "check": "Identified as insurance rep.",
+        "red_flag_if": "Posed as survey-taker, lucky-draw staff or bank staff."
+      }
+    ]
+  },
+  "channel_bank": {
+    "name": "Channel: Bank branch (Bancassurance)",
+    "questions": [
+      {
+        "id": "bank_original_intent",
+        "text": "When you visited the bank branch, what did you originally go there to do?",
+        "check": "Came intending to discuss insurance/financial planning.",
+        "red_flag_if": "Came to renew a fixed deposit or do a banking transaction and was redirected to this policy.",
+        "missell": true
+      },
+      {
+        "id": "bank_not_guaranteed_by_bank",
+        "text": "Do you understand this policy is underwritten by {insurer}, not the bank, and isn't covered by the SDIC deposit insurance scheme?",
+        "check": "Understands insurer vs bank.",
+        "red_flag_if": "Thinks the bank guarantees it or that it's SDIC-insured like a deposit."
+      }
+    ]
+  },
+  "channel_replacement": {
+    "name": "Channel: Policy replacement / switching",
+    "questions": [
+      {
+        "id": "replacement_disadvantages",
+        "text": "We noted you're replacing or surrendering an existing policy. Did the agent explain the downsides of switching, like surrender charges, lost bonuses, higher premiums at your current age, and new waiting periods?",
+        "check": "Disadvantages explained.",
+        "red_flag_if": "Downsides not explained, or told switching has 'no loss'.",
+        "missell": true
+      },
+      {
+        "id": "replacement_comparison",
+        "text": "Did the agent show you a written comparison of your old policy and the new one, including coverage and cash value?",
+        "check": "Written comparison provided.",
+        "red_flag_if": "No comparison; only verbal assurance the new one is 'better'.",
+        "missell": true
+      },
+      {
+        "id": "replacement_form",
+        "text": "Did you sign a Replacement of Policy disclosure form acknowledging these risks?",
+        "check": "Form signed and understood.",
+        "red_flag_if": "No form, or signed without explanation."
+      }
+    ]
+  },
+  "product_ilp": {
+    "name": "Product: Investment-Linked Policy (ILP)",
+    "questions": [
+      {
+        "id": "ilp_risk_profiling",
+        "text": "Did the agent ask you to complete a risk profiling questionnaire, and tell you which risk category you fall into?",
+        "check": "Risk profiling done; client knows their category.",
+        "red_flag_if": "No risk profiling, or client doesn't know their risk category.",
+        "missell": true
+      },
+      {
+        "id": "ilp_fund_choice",
+        "text": "Which funds is your premium invested in, and did the agent explain why those funds suit your risk appetite?",
+        "check": "Fund choice explained relative to risk profile.",
+        "red_flag_if": "Doesn't know the funds, or high-risk funds chosen for a conservative client.",
+        "missell": true
+      },
+      {
+        "id": "ilp_not_guaranteed",
+        "text": "Do you understand that the policy value isn't guaranteed, goes up and down with the funds, and you could lose part of what you put in?",
+        "check": "Understands investment risk.",
+        "red_flag_if": "Believes capital or returns are guaranteed or 'cannot lose'."
+      },
+      {
+        "id": "ilp_projected_returns",
+        "text": "The Benefit Illustration shows projected returns, like 4 and 8 percent. Were you told what those numbers mean?",
+        "check": "Understands projections are illustrative only, not guaranteed.",
+        "red_flag_if": "Was told the 8 percent (or any return) is guaranteed or 'confirm can get'. Strong mis-selling indicator.",
+        "missell": true
+      },
+      {
+        "id": "ilp_fees",
+        "text": "Did the agent explain the charges, such as policy fees, fund management charges and insurance charges that go up as you age?",
+        "check": "Charges explained.",
+        "red_flag_if": "Not aware of any charges."
+      },
+      {
+        "id": "ilp_horizon",
+        "text": "How long do you plan to stay invested, and were you told that withdrawing in the first few years could mean getting back less than you paid?",
+        "check": "Long horizon matching the plan; aware of early-surrender loss.",
+        "red_flag_if": "Needs the money within a few years (short horizon) or unaware of early-surrender losses.",
+        "missell": true
+      },
+      {
+        "id": "ilp_emergency_fund",
+        "text": "Apart from this plan, do you have some emergency savings set aside, say a few months of expenses?",
+        "check": "Has emergency buffer outside the policy.",
+        "red_flag_if": "Put most or all of their savings into the ILP with no emergency buffer.",
+        "missell": true
+      }
+    ]
+  },
+  "product_par": {
+    "name": "Product: Participating Endowment / Whole Life",
+    "questions": [
+      {
+        "id": "par_guaranteed_vs_non",
+        "text": "Do you understand the difference between the guaranteed and non-guaranteed benefits shown in your Benefit Illustration?",
+        "check": "Understands the split.",
+        "red_flag_if": "Thinks the total projected amount is guaranteed."
+      },
+      {
+        "id": "par_bonus_risk",
+        "text": "Are you aware that the bonuses depend on the insurer's participating fund performance and could be lower, or even zero?",
+        "check": "Aware bonuses can vary.",
+        "red_flag_if": "Was told bonuses are fixed or certain.",
+        "missell": true
+      },
+      {
+        "id": "par_early_surrender",
+        "text": "Do you understand that if you surrender early, especially in the first few years, you'll get back much less than the premiums you've paid?",
+        "check": "Aware of early-surrender loss.",
+        "red_flag_if": "Expects to withdraw early or unaware of the loss.",
+        "missell": true
+      }
+    ]
+  },
+  "product_ip": {
+    "name": "Product: Integrated Shield Plan",
+    "questions": [
+      {
+        "id": "ip_existing_cover",
+        "text": "Did the representative check your existing MediShield Life or company medical coverage before recommending this plan?",
+        "check": "Existing cover checked; no duplicate plan.",
+        "red_flag_if": "Not checked, or client already has an Integrated Shield Plan (duplicate).",
+        "missell": true
+      },
+      {
+        "id": "ip_deductible_coinsurance",
+        "text": "Could you tell me what the deductible and co-insurance mean for you when you're hospitalised?",
+        "check": "Understands deductible and co-insurance.",
+        "red_flag_if": "Thinks the plan pays the full bill with no co-payment."
+      },
+      {
+        "id": "ip_premium_age_bands",
+        "text": "Are you aware the premiums are not fixed, and will increase as you move into older age bands?",
+        "check": "Aware premiums rise.",
+        "red_flag_if": "Believes the premium stays the same for life."
+      },
+      {
+        "id": "ip_medisave_cash",
+        "text": "Do you know which part of the premium can be paid from MediSave and which part must be paid in cash?",
+        "check": "Understands MediSave limits vs cash.",
+        "red_flag_if": "Thinks the whole premium is paid from MediSave."
+      }
+    ]
+  },
+  "selected_client": {
+    "name": "Selected Client safeguards",
+    "questions": [
+      {
+        "id": "sc_trusted_individual",
+        "text": "Was a family member or trusted person, like your spouse or an adult child, with you during the sales presentation?",
+        "check": "Trusted Individual present, or client knowingly declined and understands the English documents.",
+        "red_flag_if": "No Trusted Individual and client was not told they could have one, or doesn't understand the English documents."
+      },
+      {
+        "id": "sc_language",
+        "text": "In what language did the agent explain the policy to you?",
+        "check": "Explained in a language the client is comfortable with.",
+        "red_flag_if": "Explained only in English to a client not comfortable in English."
+      },
+      {
+        "id": "sc_comprehension",
+        "text": "Could you briefly tell me, in your own words, what this policy does for you and how long you need to pay?",
+        "check": "Reasonable summary in their own words. Key comprehension test: ask it cold, and do NOT describe or hint at the policy type, risks or guarantees before the client answers.",
+        "red_flag_if": "Cannot describe the policy, or describes it as a deposit or guaranteed savings.",
+        "missell": true
+      },
+      {
+        "id": "sc_supervisor_call",
+        "text": "Has a supervisor or another officer, other than the agent, contacted you to check your understanding?",
+        "check": "Supervisor verification done.",
+        "red_flag_if": "No independent verification (concern)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "survey_id": "ilp_selected_client",
+  "survey_title": "ILP · Selected Client (aged 66) · Suitability",
+  "client": {
+    "client_name": "Lim Ah Kow",
+    "dob": "5 May 1960",
+    "age": 66,
+    "policy_name": "Legacy Invest-Link (demo plan)",
+    "insurer": "AIA Singapore",
+    "application_no": "AIA-ILP-239955",
+    "agent_name": "Kelvin Ong",
+    "premium": "$50,000",
+    "frequency": "single premium",
+    "term": "one-time payment, 10-year horizon",
+    "purchase_date": "15 November 2026",
+    "selected_client": true,
+    "language": "Mandarin, limited English"
+  },
+  "session_id": "37ff0f07-6837-417b-9502-547a91ba4cc7",
+  "completed_at": "2026-11-24T18:14:18.267503+00:00",
+  "outcome": "ESCALATE",
+  "missell_suspected": true,
+  "missell_indicators": [
+    "fna_document",
+    "existing_cover",
+    "ilp_fund_choice",
+    "ilp_horizon",
+    "affordability",
+    "sc_comprehension"
+  ],
+  "red_flags": [
+    "fna_document",
+    "existing_cover",
+    "ilp_fund_choice",
+    "ilp_fees",
+    "ilp_horizon",
+    "premium_recall",
+    "affordability"
+  ],
+  "concerns": [
+    "sc_comprehension",
+    "sc_supervisor_call"
+  ],
+  "unanswered": [],
+  "agent_summary": "Called Mr. Lim (66) regarding his ILP. While his wife was present and the language was appropriate (Mandarin), several red flags appeared: he did not receive the FNA, the agent didn't review existing coverage, he was unaware of fees, misstated the premium amount, and found the payment to be a stretch.",
+  "missell_assessment": "There are significant concerns regarding the suitability and selling process for this ILP. The client (aged 66) indicated the premium was a stretch, did not know the premium amount accurately, was unaware of fees, and did not have their existing coverage reviewed by the agent. No FNA document was provided, and supervisor verification is pending.",
+  "answers": {
+    "id_confirm": {
+      "answer": "Client agreed to proceed with the call.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:10:59.797211+00:00"
+    },
+    "voluntary_application": {
+      "answer": "Client agreed to proceed with the call.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:11:19.135065+00:00"
+    },
+    "sc_trusted_individual": {
+      "answer": "Client's wife was present during the sales presentation.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:11:27.876252+00:00"
+    },
+    "sc_language": {
+      "answer": "Agent explained the policy in Mandarin, which the client was comfortable with.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:11:38.330502+00:00"
+    },
+    "sc_comprehension": {
+      "answer": "Client understands it's a single premium policy but sees it only as a way to \"make a lot of money,\" suggesting a focus on returns over understanding the investment risk.",
+      "flag": "concern",
+      "note": "Expressed understanding is limited to single premium and high returns; did not mention investment nature or risks.",
+      "recorded_at": "2026-11-24T18:11:53.002556+00:00"
+    },
+    "sc_supervisor_call": {
+      "answer": "No supervisor verification call has been made yet.",
+      "flag": "concern",
+      "note": "Supervisor verification not yet completed for this selected client.",
+      "recorded_at": "2026-11-24T18:12:01.241073+00:00"
+    },
+    "fna_discussion": {
+      "answer": "Agent discussed financial goals and existing savings.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:12:10.054311+00:00"
+    },
+    "fna_document": {
+      "answer": "Client has not received the FNA document.",
+      "flag": "red_flag",
+      "note": "Has not received the FNA form after the sale.",
+      "recorded_at": "2026-11-24T18:12:18.467890+00:00"
+    },
+    "existing_cover": {
+      "answer": "Agent did not ask about existing insurance or savings.",
+      "flag": "red_flag",
+      "note": "Agent did not discuss existing coverage with the client.",
+      "recorded_at": "2026-11-24T18:12:26.937198+00:00"
+    },
+    "ilp_risk_profiling": {
+      "answer": "Client completed a risk profiling questionnaire.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:12:36.078987+00:00"
+    },
+    "ilp_fund_choice": {
+      "answer": "Client is not aware of which funds their premium is invested in.",
+      "flag": "red_flag",
+      "note": "Client could not name the funds chosen for the ILP.",
+      "recorded_at": "2026-11-24T18:12:42.604048+00:00"
+    },
+    "ilp_not_guaranteed": {
+      "answer": "Client understands the investment risk and that the policy value is not guaranteed.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:12:51.568932+00:00"
+    },
+    "ilp_projected_returns": {
+      "answer": "Client understands that projected returns are illustrations and not guaranteed.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:13:02.687929+00:00"
+    },
+    "ilp_fees": {
+      "answer": "Client is not aware of the charges associated with the policy.",
+      "flag": "red_flag",
+      "note": "Client stated they don't know what charges apply to the ILP.",
+      "recorded_at": "2026-11-24T18:13:10.590264+00:00"
+    },
+    "ilp_horizon": {
+      "answer": "Client indicated a shorter investment horizon (\"at least 5 years\") for this long-term ILP.",
+      "flag": "red_flag",
+      "note": "Intends to stay invested for \"at least 5 years\" which may be too short for the ILP's recommended horizon.",
+      "recorded_at": "2026-11-24T18:13:20.281783+00:00"
+    },
+    "ilp_emergency_fund": {
+      "answer": "Client has emergency savings outside of this policy.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:13:42.107097+00:00"
+    },
+    "not_a_deposit": {
+      "answer": "Client understands this is an insurance policy and not a bank deposit.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:13:50.835152+00:00"
+    },
+    "premium_recall": {
+      "answer": "Client stated the premium is S$100,000, which is double the actual S$50,000 single premium.",
+      "flag": "red_flag",
+      "note": "Client incorrectly stated the premium amount as 100k (actual is 50k).",
+      "recorded_at": "2026-11-24T18:13:59.910711+00:00"
+    },
+    "affordability": {
+      "answer": "Client stated the premium is \"a bit of a stretch.\"",
+      "flag": "red_flag",
+      "note": "Client indicated the premium amount might cause financial difficulty (\"a bit of a stretch\").",
+      "recorded_at": "2026-11-24T18:14:08.387873+00:00"
+    },
+    "final_concerns": {
+      "answer": "No further concerns raised by the client.",
+      "flag": "ok",
+      "note": "",
+      "recorded_at": "2026-11-24T18:14:16.665671+00:00"
+    }
+  }
+}

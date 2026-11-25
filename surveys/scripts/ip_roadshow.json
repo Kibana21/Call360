@@ -1,0 +1,41 @@
+{
+  "id": "ip_roadshow",
+  "title": "Integrated Shield · Mall roadshow · Impulse sale",
+  "product": "Integrated Shield Plan + Rider",
+  "channel": "Roadshow (shopping mall)",
+  "tags": [
+    "Shield",
+    "Roadshow",
+    "Impulse"
+  ],
+  "focus": "The plan was sold at a mall roadshow, a high-risk impulse setting. Check whether the client had time and privacy, whether the rep identified themselves properly, whether existing medical cover was checked (duplicate Shield risk), and whether the client understands deductibles, co-insurance, rising premiums and MediSave limits.",
+  "profile": {
+    "client_name": "Nur Aisyah",
+    "dob": "11 June 1997",
+    "age": 29,
+    "policy_name": "MediShield Plus (Private) with Rider (demo plan)",
+    "insurer": "AIA Singapore",
+    "application_no": "AIA-IP-241230",
+    "agent_name": "Ryan Koh",
+    "premium": "$680",
+    "frequency": "annually (MediSave + cash)",
+    "term": "yearly renewable",
+    "purchase_date": "21 November 2026",
+    "selected_client": false
+  },
+  "roleplay_tips": [
+    "Say you were stopped for a 'lucky draw survey'",
+    "Say you already have a Shield plan through your company or parents",
+    "Say you thought MediSave pays everything"
+  ],
+  "sections": [
+    "identity",
+    "channel_roadshow",
+    "fna",
+    "product_ip",
+    "commitments",
+    "conduct",
+    "free_look",
+    "closing"
+  ]
+}

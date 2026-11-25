@@ -1,0 +1,14 @@
+# Python 3.12+ (tested on 3.14)
+
+# Google ADK (agent + live voice runner) and the Gemini / Vertex AI SDK
+google-adk>=2.15
+google-genai>=2.30
+google-auth>=2.40          # service-account credentials from api_key.json
+
+# Web server for the browser voice UI (REST + websocket)
+fastapi>=0.115
+uvicorn[standard]>=0.30    # [standard] adds the websocket + fast event-loop extras
+websockets>=13             # websocket transport for uvicorn (also used by test scripts)
+
+# TLS root certificates (fixes SSL errors with python.org builds on macOS)
+certifi

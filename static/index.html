@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>AIA Call-back Verification</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --aia-red: #d31145; --aia-red-dark: #a50d36; --aia-red-soft: #fdeef2; --aia-red-line: #f6c7d3;
+      --ink: #333d47; --muted: #6b7682; --line: #e6e9ed; --bg: #f7f8fa; --panel: #ffffff; --panel-2: #f4f5f7;
+      --ok: #1a8a4a; --ok-bg: #e5f6ec; --warn: #b26a00; --warn-bg: #fff3dc; --bad: #d31145; --bad-bg: #fdeef2;
+      --shadow: 0 1px 2px rgba(51,61,71,.06), 0 6px 20px rgba(51,61,71,.06);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; font: 14px/1.45 "Open Sans", system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); }
+    header { display: flex; align-items: center; gap: 14px; padding: 12px 22px; background: #fff; border-bottom: 4px solid var(--aia-red); }
+    .brand { background: var(--aia-red); color: #fff; font-weight: 800; letter-spacing: .02em; font-size: 18px; padding: 6px 12px; border-radius: 8px; }
+    header h1 { font-size: 17px; margin: 0; font-weight: 700; }
+    header .sub { color: var(--muted); font-size: 12px; }
+    .pill { margin-left: auto; padding: 5px 12px; border-radius: 999px; background: var(--panel-2); font-size: 12px; font-weight: 600; color: var(--muted); }
+    .pill.live { background: var(--aia-red); color: #fff; }
+    .layout { display: grid; grid-template-columns: 300px minmax(0,1fr) 380px; gap: 16px; padding: 16px; height: calc(100% - 64px); }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); min-height: 0; display: flex; flex-direction: column; }
+    .panel h2 { font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--aia-red); margin: 0; padding: 14px 16px 8px; font-weight: 700; }
+    .scroll { overflow-y: auto; min-height: 0; }
+
+    /* Left */
+    .left { display: grid; grid-template-rows: minmax(0, 1.5fr) minmax(0, 1fr); gap: 16px; min-height: 0; }
+    #scripts, #calls { padding: 2px 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+    .script { text-align: left; border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: 10px 12px; cursor: pointer; color: inherit; font: inherit; transition: border-color .15s, background .15s; }
+    .script:hover { border-color: var(--aia-red-line); background: var(--aia-red-soft); }
+    .script.active { border-color: var(--aia-red); background: var(--aia-red-soft); box-shadow: inset 4px 0 0 var(--aia-red); }
+    .script:disabled { cursor: not-allowed; opacity: .55; }
+    .script .t { font-weight: 700; font-size: 13px; }
+    .script .c { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+    .tag { font-size: 11px; padding: 1px 8px; border-radius: 999px; background: var(--panel-2); color: var(--muted); font-weight: 600; }
+    .callitem { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; }
+    .callitem .when { color: var(--muted); font-size: 11.5px; }
+    .chip { font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; align-self: start; }
+    .chip.PASS { background: var(--ok-bg); color: var(--ok); }
+    .chip.REVIEW { background: var(--warn-bg); color: var(--warn); }
+    .chip.ESCALATE { background: var(--bad-bg); color: var(--bad); }
+    .chip.NONE { background: var(--panel-2); color: var(--muted); }
+    .none { color: var(--muted); font-size: 12px; padding: 4px 6px; }
+
+    /* Centre */
+    .centre { display: grid; grid-template-rows: auto minmax(0,1fr); gap: 16px; min-height: 0; }
+    .profile { padding: 16px 18px; display: grid; grid-template-columns: 1fr auto; gap: 12px; }
+    .profile .name { font-size: 19px; font-weight: 800; }
+    .profile .meta { color: var(--muted); font-size: 12.5px; }
+    .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px 16px; margin-top: 4px; grid-column: 1 / -1; }
+    .fact span { display: block; color: var(--muted); font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+    .fact b { font-weight: 600; font-size: 13px; }
+    .badge-sc { align-self: start; font-size: 11px; font-weight: 700; padding: 5px 10px; border-radius: 6px; background: var(--warn-bg); color: var(--warn); }
+    .focus { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink); background: var(--panel-2); border-left: 4px solid var(--aia-red); padding: 8px 12px; border-radius: 0 8px 8px 0; }
+    .tips { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .tips .lbl { font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 700; margin-right: 2px; }
+    .tip { font-size: 12px; padding: 3px 10px; border-radius: 999px; background: #fff; border: 1px dashed var(--aia-red-line); }
+
+    .callbar { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+    .avatar { position: relative; width: 48px; height: 48px; border-radius: 50%; background: var(--aia-red); color: #fff; display: grid; place-items: center; font-weight: 800; flex: none; }
+    .avatar::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 3px solid var(--aia-red); opacity: 0; transition: .2s; }
+    .avatar.speaking::after { opacity: 1; animation: pulse 1s ease-in-out infinite; }
+    @keyframes pulse { 50% { transform: scale(1.1); opacity: .3; } }
+    .who b { display: block; }
+    .who span { color: var(--muted); font-size: 12px; }
+    .rec { display: none; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: var(--aia-red); }
+    .rec.on { display: inline-flex; }
+    .rec::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--aia-red); animation: blink 1s infinite; }
+    @keyframes blink { 50% { opacity: .2; } }
+    #timer { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 600; }
+    #toggle { border: 0; border-radius: 999px; padding: 11px 22px; font: 700 14px "Open Sans", sans-serif; background: var(--aia-red); color: #fff; cursor: pointer; box-shadow: 0 2px 8px rgba(211,17,69,.3); }
+    #toggle:hover { background: var(--aia-red-dark); }
+    #toggle.end { background: var(--ink); box-shadow: none; }
+    #toggle:disabled { opacity: .6; cursor: default; }
+    #replay { display: none; padding: 10px 16px; border-bottom: 1px solid var(--line); background: var(--aia-red-soft); align-items: center; gap: 12px; flex-wrap: wrap; }
+    #replay.show { display: flex; }
+    #replay .lbl { font-weight: 700; font-size: 12.5px; color: var(--aia-red); }
+    #replay audio { flex: 1; min-width: 220px; height: 36px; }
+    #transcript { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+    .empty { margin: auto; text-align: center; color: var(--muted); max-width: 360px; }
+    .bubble { max-width: 78%; padding: 9px 13px; border-radius: 16px; white-space: pre-wrap; }
+    .bubble.bot { align-self: flex-start; background: var(--panel-2); border-bottom-left-radius: 4px; }
+    .bubble.user { align-self: flex-end; background: var(--aia-red); color: #fff; border-bottom-right-radius: 4px; }
+    .bubble .ts { display: block; font-size: 10px; opacity: .6; margin-bottom: 2px; }
+
+    /* Checklist */
+    .progress { padding: 0 16px 10px; }
+    .bar { height: 7px; border-radius: 999px; background: var(--panel-2); overflow: hidden; }
+    .bar i { display: block; height: 100%; width: 0; background: var(--aia-red); transition: width .3s; }
+    .counts { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--muted); margin-top: 6px; }
+    .counts b { font-weight: 700; }
+    .c-ok { color: var(--ok); } .c-warn { color: var(--warn); } .c-bad { color: var(--bad); }
+    #outcome { margin: 0 16px 10px; border-radius: 10px; padding: 12px 14px; display: none; }
+    #outcome.show { display: block; }
+    #outcome.PASS { background: var(--ok-bg); color: var(--ok); }
+    #outcome.REVIEW { background: var(--warn-bg); color: var(--warn); }
+    #outcome.ESCALATE { background: var(--bad-bg); color: var(--bad); border: 1px solid var(--aia-red-line); }
+    #outcome .big { font-size: 18px; font-weight: 800; }
+    #outcome .ms { font-weight: 700; margin-top: 2px; }
+    #outcome .file { font-size: 11px; opacity: .8; margin-top: 4px; }
+    #checklist { padding: 0 10px 14px; }
+    .sec { margin-top: 10px; }
+    .sec-name { font-size: 12px; font-weight: 700; padding: 4px 6px; color: var(--ink); }
+    .q { display: grid; grid-template-columns: 12px 1fr; gap: 8px; padding: 7px 6px; border-radius: 8px; }
+    .q.current { background: var(--aia-red-soft); }
+    .dot { width: 11px; height: 11px; border-radius: 50%; margin-top: 4px; border: 2px solid #cfd5db; background: #fff; }
+    .q.ok .dot { background: var(--ok); border-color: var(--ok); }
+    .q.concern .dot { background: #f0a020; border-color: #f0a020; }
+    .q.red_flag .dot { background: var(--bad); border-color: var(--bad); }
+    .q .qt { font-size: 12.5px; }
+    .q .ms-tag { font-size: 9.5px; font-weight: 800; color: #fff; background: var(--aia-red); border-radius: 4px; padding: 1px 5px; margin-left: 5px; letter-spacing: .03em; vertical-align: 1px; }
+    .q .ans { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .q.red_flag .ans { color: var(--bad); }
+    .q.concern .ans { color: var(--warn); }
+
+    @media (max-width: 1180px) {
+      .layout { grid-template-columns: 270px minmax(0,1fr); height: auto; }
+      .checklist-panel { grid-column: 1 / -1; }
+      .call { min-height: 460px; }
+      .left { grid-template-rows: auto auto; }
+    }
+    @media (max-width: 760px) {
+      .layout { grid-template-columns: 1fr; padding: 12px 16px; }
+      header .sub { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">AIA</div>
+    <div>
+      <h1>Customer Call-back Verification</h1>
+      <div class="sub">AIA Singapore · Post-sale verification · MAS Fair Dealing &amp; Balanced Scorecard</div>
+    </div>
+    <div class="pill" id="status">Ready</div>
+  </header>
+
+  <div class="layout">
+    <div class="left">
+      <aside class="panel">
+        <h2>Call scripts</h2>
+        <div class="scroll"><div id="scripts"></div></div>
+      </aside>
+      <aside class="panel">
+        <h2>Recorded calls</h2>
+        <div class="scroll"><div id="calls"></div></div>
+      </aside>
+    </div>
+
+    <section class="centre">
+      <div class="panel profile" id="profile"></div>
+      <div class="panel call">
+        <div class="callbar">
+          <div class="avatar" id="avatar">ML</div>
+          <div class="who"><b>Mei Ling</b><span>Customer Verification Unit · AIA Singapore</span></div>
+          <span class="rec" id="rec">REC</span>
+          <div id="timer">00:00</div>
+          <button id="toggle">Start call</button>
+        </div>
+        <div id="replay"><span class="lbl" id="replay-lbl">Recording</span><audio id="player" controls preload="metadata"></audio></div>
+        <div class="scroll" id="transcript">
+          <div class="empty" id="empty">Choose a call script, then press <b>Start call</b>. You play the client: use the profile and role-play ideas above. Every call is recorded and appears under <b>Recorded calls</b>.</div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel checklist-panel">
+      <h2>Compliance checklist</h2>
+      <div class="progress">
+        <div class="bar"><i id="bar"></i></div>
+        <div class="counts">
+          <span id="cnt-done">0/0 answered</span>
+          <span class="c-ok">● <b id="cnt-ok">0</b> ok</span>
+          <span class="c-warn">● <b id="cnt-warn">0</b> concern</span>
+          <span class="c-bad">● <b id="cnt-bad">0</b> red flag</span>
+        </div>
+      </div>
+      <div id="outcome"></div>
+      <div class="scroll"><div id="checklist"></div></div>
+    </aside>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>

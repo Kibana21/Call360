@@ -1,0 +1,415 @@
+{
+  "call_id": "20261124_181044_ilp_selected_client_37ff0f",
+  "survey_id": "ilp_selected_client",
+  "survey_title": "ILP · Selected Client (aged 66) · Suitability",
+  "client_name": "Lim Ah Kow",
+  "profile": {
+    "client_name": "Lim Ah Kow",
+    "dob": "5 May 1960",
+    "age": 66,
+    "policy_name": "Legacy Invest-Link (demo plan)",
+    "insurer": "AIA Singapore",
+    "application_no": "AIA-ILP-239955",
+    "agent_name": "Kelvin Ong",
+    "premium": "$50,000",
+    "frequency": "single premium",
+    "term": "one-time payment, 10-year horizon",
+    "purchase_date": "15 November 2026",
+    "selected_client": true,
+    "language": "Mandarin, limited English"
+  },
+  "started_at": "2026-11-24T18:10:44.679895+00:00",
+  "ended_at": "2026-11-24T18:14:27.463691+00:00",
+  "duration_s": 223,
+  "transcript": [
+    {
+      "t": 2.5,
+      "speaker": "agent",
+      "text": "Good evening, Mr. Lim. I'm Mei Ling from AIA Singapore's Customer Verification Unit. Are you Mr. Lim Ah Kow?"
+    },
+    {
+      "t": 11.0,
+      "speaker": "client",
+      "text": "Yes."
+    },
+    {
+      "t": 14.4,
+      "speaker": "agent",
+      "text": "Thank you. We're calling to do a short call-back, just a few minutes, about your new Legacy Invest-Link policy. This is for your protection, okay, and the call is recorded. Is now a good time?"
+    },
+    {
+      "t": 16.9,
+      "speaker": "agent",
+      "text": "Can you confirm that you voluntarily applied for this policy through Kelvin Ong?"
+    },
+    {
+      "t": 28.9,
+      "speaker": "client",
+      "text": "Yes, I can."
+    },
+    {
+      "t": 30.8,
+      "speaker": "agent",
+      "text": "Okay, thank you. And was a family member or"
+    },
+    {
+      "t": 36.4,
+      "speaker": "agent",
+      "text": "thank you. Was a family member or trusted person with you during the sales presentation?"
+    },
+    {
+      "t": 42.9,
+      "speaker": "client",
+      "text": "Yes. Yes, I have my wife with me."
+    },
+    {
+      "t": 45.0,
+      "speaker": "agent",
+      "text": "I see. And in what language did the agent explain the policy to you?"
+    },
+    {
+      "t": 53.2,
+      "speaker": "client",
+      "text": "He is skilled in Mandarin Chinese."
+    },
+    {
+      "t": 55.6,
+      "speaker": "agent",
+      "text": "Alright. Could you briefly tell me in your own words, what this policy does for you?"
+    },
+    {
+      "t": 67.8,
+      "speaker": "client",
+      "text": "I think this is single payment premium policy. I think this is Legacy policy, so I can make a lot of money from this."
+    },
+    {
+      "t": 70.3,
+      "speaker": "agent",
+      "text": "I see. Has a supervisor or another officer from AIA contacted you?"
+    },
+    {
+      "t": 76.1,
+      "speaker": "client",
+      "text": "knob"
+    },
+    {
+      "t": 78.7,
+      "speaker": "agent",
+      "text": "Before recommending this plan, did Kelvin Ong discuss your financial goals and existing savings with you?"
+    },
+    {
+      "t": 85.0,
+      "speaker": "client",
+      "text": "used he did."
+    },
+    {
+      "t": 87.0,
+      "speaker": "agent",
+      "text": "And did you receive a copy of the Financial Needs Analysis form?"
+    },
+    {
+      "t": 93.3,
+      "speaker": "client",
+      "text": "I have not yet received anything."
+    },
+    {
+      "t": 95.7,
+      "speaker": "agent",
+      "text": "Ah, okay. Did the agent ask about your other insurance policies and savings?"
+    },
+    {
+      "t": 101.8,
+      "speaker": "client",
+      "text": "No, he didn't."
+    },
+    {
+      "t": 104.0,
+      "speaker": "agent",
+      "text": "Hmm, alright. Did you complete a risk profiling questionnaire?"
+    },
+    {
+      "t": 111.0,
+      "speaker": "client",
+      "text": "Yes."
+    },
+    {
+      "t": 112.9,
+      "speaker": "agent",
+      "text": "And do you know which funds your premium is invested in?"
+    },
+    {
+      "t": 117.5,
+      "speaker": "client",
+      "text": "Hello I'm not sure."
+    },
+    {
+      "t": 120.0,
+      "speaker": "agent",
+      "text": "Okay. Do you understand that the policy value can go up and down, and is not guaranteed?"
+    },
+    {
+      "t": 126.5,
+      "speaker": "client",
+      "text": "Yes. Yes, I know that."
+    },
+    {
+      "t": 129.3,
+      "speaker": "agent",
+      "text": "Great. Were you told that the projected returns, like 4 and 8 percent, are just illustrations and not guaranteed?"
+    },
+    {
+      "t": 137.6,
+      "speaker": "client",
+      "text": "Yes."
+    },
+    {
+      "t": 139.7,
+      "speaker": "agent",
+      "text": "Alright. Did the agent explain the charges for this policy?"
+    },
+    {
+      "t": 145.4,
+      "speaker": "client",
+      "text": "What charges I don't know?"
+    },
+    {
+      "t": 147.4,
+      "speaker": "agent",
+      "text": "No worries. How long do you plan to stay invested?"
+    },
+    {
+      "t": 154.9,
+      "speaker": "client",
+      "text": "please 5 years"
+    },
+    {
+      "t": 158.4,
+      "speaker": "client",
+      "text": "Hey, do you talk in Mandarin?"
+    },
+    {
+      "t": 159.9,
+      "speaker": "agent",
+      "text": "Ah, yes, I can speak Mandarin. 您 是想 用华 语继续 吗?"
+    },
+    {
+      "t": 169.3,
+      "speaker": "client",
+      "text": "I think, let's come back English."
+    },
+    {
+      "t": 171.6,
+      "speaker": "agent",
+      "text": "No problem. Apart from this plan, do you have some emergency savings set aside?"
+    },
+    {
+      "t": 177.1,
+      "speaker": "client",
+      "text": "Yes, I have."
+    },
+    {
+      "t": 179.5,
+      "speaker": "agent",
+      "text": "Great. Just to check, this is an insurance policy and not a bank deposit, correct?"
+    },
+    {
+      "t": 185.7,
+      "speaker": "client",
+      "text": "Yes Yes Yes"
+    },
+    {
+      "t": 187.6,
+      "speaker": "agent",
+      "text": "Could you briefly tell me how much the premium is?"
+    },
+    {
+      "t": 194.6,
+      "speaker": "client",
+      "text": "I think it's 100,000."
+    },
+    {
+      "t": 196.7,
+      "speaker": "agent",
+      "text": "Okay. Are you comfortable paying this premium?"
+    },
+    {
+      "t": 203.3,
+      "speaker": "client",
+      "text": "it's bit of the stretch for me. It's not that easy."
+    },
+    {
+      "t": 205.3,
+      "speaker": "agent",
+      "text": "I understand. Is there anything else you're unsure about?"
+    },
+    {
+      "t": 211.7,
+      "speaker": "client",
+      "text": "No, I'm pretty sure about everything."
+    },
+    {
+      "t": 216.1,
+      "speaker": "agent",
+      "text": "Thank you for your time, Mr. Lim. Since there are some clarifications needed, a colleague will follow up with you soon. Have a good evening."
+    }
+  ],
+  "answers": [
+    {
+      "question_id": "id_confirm",
+      "note": "",
+      "flag": "ok",
+      "answer": "Client confirmed name and date of birth."
+    },
+    {
+      "question_id": "id_confirm",
+      "answer": "Client agreed to proceed with the call.",
+      "note": "",
+      "flag": "ok"
+    },
+    {
+      "answer": "Client confirmed the voluntary purchase through agent Kelvin Ong.",
+      "note": "",
+      "flag": "ok",
+      "question_id": "voluntary_application"
+    },
+    {
+      "note": "",
+      "question_id": "voluntary_application",
+      "answer": "Client agreed to proceed with the call.",
+      "flag": "ok"
+    },
+    {
+      "question_id": "sc_trusted_individual",
+      "note": "",
+      "flag": "ok",
+      "answer": "Client's wife was present during the sales presentation."
+    },
+    {
+      "question_id": "sc_language",
+      "note": "",
+      "answer": "Agent explained the policy in Mandarin, which the client was comfortable with.",
+      "flag": "ok"
+    },
+    {
+      "flag": "concern",
+      "answer": "Client understands it's a single premium policy but sees it only as a way to \"make a lot of money,\" suggesting a focus on returns over understanding the investment risk.",
+      "question_id": "sc_comprehension",
+      "note": "Expressed understanding is limited to single premium and high returns; did not mention investment nature or risks."
+    },
+    {
+      "note": "Supervisor verification not yet completed for this selected client.",
+      "question_id": "sc_supervisor_call",
+      "flag": "concern",
+      "answer": "No supervisor verification call has been made yet."
+    },
+    {
+      "question_id": "fna_discussion",
+      "note": "",
+      "flag": "ok",
+      "answer": "Agent discussed financial goals and existing savings."
+    },
+    {
+      "note": "Has not received the FNA form after the sale.",
+      "question_id": "fna_document",
+      "flag": "red_flag",
+      "answer": "Client has not received the FNA document."
+    },
+    {
+      "answer": "Agent did not ask about existing insurance or savings.",
+      "flag": "red_flag",
+      "question_id": "existing_cover",
+      "note": "Agent did not discuss existing coverage with the client."
+    },
+    {
+      "flag": "ok",
+      "question_id": "ilp_risk_profiling",
+      "answer": "Client completed a risk profiling questionnaire.",
+      "note": ""
+    },
+    {
+      "answer": "Client is not aware of which funds their premium is invested in.",
+      "flag": "red_flag",
+      "note": "Client could not name the funds chosen for the ILP.",
+      "question_id": "ilp_fund_choice"
+    },
+    {
+      "answer": "Client understands the investment risk and that the policy value is not guaranteed.",
+      "question_id": "ilp_not_guaranteed",
+      "note": "",
+      "flag": "ok"
+    },
+    {
+      "question_id": "ilp_projected_returns",
+      "note": "",
+      "answer": "Client understands that projected returns are illustrations and not guaranteed.",
+      "flag": "ok"
+    },
+    {
+      "note": "Client stated they don't know what charges apply to the ILP.",
+      "answer": "Client is not aware of the charges associated with the policy.",
+      "question_id": "ilp_fees",
+      "flag": "red_flag"
+    },
+    {
+      "flag": "red_flag",
+      "question_id": "ilp_horizon",
+      "answer": "Client indicated a shorter investment horizon (\"at least 5 years\") for this long-term ILP.",
+      "note": "Intends to stay invested for \"at least 5 years\" which may be too short for the ILP's recommended horizon."
+    },
+    {
+      "answer": "Client switched to Mandarin, then back to English.",
+      "flag": "ok",
+      "note": "",
+      "question_id": "ilp_emergency_fund"
+    },
+    {
+      "answer": "Client has emergency savings outside of this policy.",
+      "note": "",
+      "question_id": "ilp_emergency_fund",
+      "flag": "ok"
+    },
+    {
+      "flag": "ok",
+      "note": "",
+      "question_id": "not_a_deposit",
+      "answer": "Client understands this is an insurance policy and not a bank deposit."
+    },
+    {
+      "question_id": "premium_recall",
+      "answer": "Client stated the premium is S$100,000, which is double the actual S$50,000 single premium.",
+      "note": "Client incorrectly stated the premium amount as 100k (actual is 50k).",
+      "flag": "red_flag"
+    },
+    {
+      "question_id": "affordability",
+      "flag": "red_flag",
+      "answer": "Client stated the premium is \"a bit of a stretch.\"",
+      "note": "Client indicated the premium amount might cause financial difficulty (\"a bit of a stretch\")."
+    },
+    {
+      "question_id": "final_concerns",
+      "note": "",
+      "answer": "No further concerns raised by the client.",
+      "flag": "ok"
+    }
+  ],
+  "result": {
+    "status": "saved",
+    "path": "ilp_selected_client_20261124_181418_37ff0f07.json",
+    "outcome": "ESCALATE",
+    "missell_suspected": true,
+    "red_flags": [
+      "fna_document",
+      "existing_cover",
+      "ilp_fund_choice",
+      "ilp_fees",
+      "ilp_horizon",
+      "premium_recall",
+      "affordability"
+    ],
+    "concerns": [
+      "sc_comprehension",
+      "sc_supervisor_call"
+    ]
+  }
+}

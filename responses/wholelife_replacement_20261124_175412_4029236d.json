@@ -1,0 +1,167 @@
+{
+  "survey_id": "wholelife_replacement",
+  "survey_title": "Whole Life · Policy replacement · Twisting check",
+  "client": {
+    "client_name": "Daniel Wong",
+    "dob": "30 September 1981",
+    "age": 45,
+    "policy_name": "LifeShield Whole Life (demo plan)",
+    "insurer": "AIA Singapore",
+    "application_no": "AIA-WL-240588",
+    "agent_name": "Benjamin Chua",
+    "premium": "$4,200",
+    "frequency": "annually",
+    "term": "20 years",
+    "purchase_date": "17 November 2026",
+    "selected_client": false,
+    "replacing": "12-year-old whole life policy with another insurer"
+  },
+  "session_id": "4029236d-da5d-48b9-acee-dc06a4edd1fc",
+  "completed_at": "2026-11-24T17:54:12.441065+00:00",
+  "outcome": "REVIEW",
+  "missell_suspected": true,
+  "missell_indicators": [
+    "replacement_disadvantages",
+    "replacement_comparison",
+    "fna_discussion",
+    "fna_document",
+    "existing_cover",
+    "par_bonus_risk",
+    "par_early_surrender",
+    "affordability"
+  ],
+  "red_flags": [],
+  "concerns": [
+    "id_confirm",
+    "voluntary_application",
+    "replacement_disadvantages",
+    "replacement_comparison",
+    "replacement_form",
+    "fna_discussion",
+    "fna_document",
+    "existing_cover",
+    "par_guaranteed_vs_non",
+    "par_bonus_risk",
+    "par_early_surrender",
+    "not_a_deposit",
+    "premium_recall",
+    "affordability",
+    "explained_no_pressure",
+    "inducements",
+    "free_look",
+    "final_concerns"
+  ],
+  "unanswered": [],
+  "agent_summary": "The client, Daniel Wong, confirmed his name and date of birth. However, he declined to answer all subsequent questions regarding the policy replacement, financial needs analysis, product details, affordability, and free-look rights. Due to the lack of client input, no verification could be completed for these crucial areas.",
+  "missell_assessment": "The client confirmed his identity but declined to answer all other verification questions regarding the replacement policy's disadvantages, the FNA process, product features, affordability, and sales conduct. Key information could not be verified.",
+  "answers": {
+    "id_confirm": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.718759+00:00"
+    },
+    "voluntary_application": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.719582+00:00"
+    },
+    "replacement_disadvantages": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.720005+00:00"
+    },
+    "replacement_comparison": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.720393+00:00"
+    },
+    "replacement_form": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.720775+00:00"
+    },
+    "fna_discussion": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.721152+00:00"
+    },
+    "fna_document": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.721523+00:00"
+    },
+    "existing_cover": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.721896+00:00"
+    },
+    "par_guaranteed_vs_non": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.722265+00:00"
+    },
+    "par_bonus_risk": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.722638+00:00"
+    },
+    "par_early_surrender": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.723008+00:00"
+    },
+    "not_a_deposit": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:19.723377+00:00"
+    },
+    "premium_recall": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:20.348055+00:00"
+    },
+    "affordability": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:25.919963+00:00"
+    },
+    "explained_no_pressure": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:38.696881+00:00"
+    },
+    "inducements": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:44.220294+00:00"
+    },
+    "free_look": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:49.974179+00:00"
+    },
+    "final_concerns": {
+      "answer": "declined",
+      "flag": "concern",
+      "note": "Answer declined.",
+      "recorded_at": "2026-11-24T17:53:55.483456+00:00"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ilp_f2f_missell",
+  "title": "ILP · Face-to-face · Financial review check",
+  "product": "Investment-Linked Policy",
+  "channel": "Face-to-face",
+  "tags": [
+    "ILP",
+    "F2F",
+    "Mis-selling"
+  ],
+  "focus": "Determine whether the agent recommended an ILP without a proper financial health review: no genuine fact-find, no risk profiling, unsuitable funds, a short horizon, no emergency buffer, or an unaffordable premium. Also check whether returns were presented as guaranteed.",
+  "profile": {
+    "client_name": "Tan Wei Ming",
+    "dob": "14 March 1991",
+    "age": 35,
+    "policy_name": "WealthGrow Invest-Link (demo plan)",
+    "insurer": "AIA Singapore",
+    "application_no": "AIA-ILP-240871",
+    "agent_name": "Jason Lee",
+    "premium": "$800",
+    "frequency": "monthly",
+    "term": "25 years",
+    "purchase_date": "18 November 2026",
+    "selected_client": false
+  },
+  "roleplay_tips": [
+    "Say the agent only asked your age and income, then went straight to the plan",
+    "Say you were told 8% returns are 'confirm can get'",
+    "Say you might need the money for a flat downpayment in 2-3 years",
+    "Say you put most of your savings into it"
+  ],
+  "sections": [
+    "identity",
+    "channel_f2f",
+    "fna",
+    "product_ilp",
+    "commitments",
+    "conduct",
+    "free_look",
+    "closing"
+  ]
+}

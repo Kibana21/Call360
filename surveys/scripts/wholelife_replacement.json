@@ -1,0 +1,42 @@
+{
+  "id": "wholelife_replacement",
+  "title": "Whole Life · Policy replacement · Twisting check",
+  "product": "Participating Whole Life",
+  "channel": "Face-to-face, replacing an existing policy",
+  "tags": [
+    "Whole Life",
+    "Replacement",
+    "Twisting"
+  ],
+  "focus": "The client is surrendering an existing whole life policy to fund this one. Check whether the agent explained the disadvantages of switching, gave a written comparison, and had the replacement form signed. Assess possible twisting and mis-selling.",
+  "profile": {
+    "client_name": "Daniel Wong",
+    "dob": "30 September 1981",
+    "age": 45,
+    "policy_name": "LifeShield Whole Life (demo plan)",
+    "insurer": "AIA Singapore",
+    "application_no": "AIA-WL-240588",
+    "agent_name": "Benjamin Chua",
+    "premium": "$4,200",
+    "frequency": "annually",
+    "term": "20 years",
+    "purchase_date": "17 November 2026",
+    "selected_client": false,
+    "replacing": "12-year-old whole life policy with another insurer"
+  },
+  "roleplay_tips": [
+    "Say the agent said switching has 'no loss, new plan better'",
+    "Say you never saw any comparison",
+    "Say you don't remember signing a replacement form"
+  ],
+  "sections": [
+    "identity",
+    "channel_replacement",
+    "fna",
+    "product_par",
+    "commitments",
+    "conduct",
+    "free_look",
+    "closing"
+  ]
+}

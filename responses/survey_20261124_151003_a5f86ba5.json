@@ -1,0 +1,28 @@
+{
+  "survey_id": "customer_satisfaction_v1",
+  "session_id": "a5f86ba5-45eb-4a67-91f4-d4b92983e24d",
+  "completed_at": "2026-11-24T15:10:03.834973+00:00",
+  "unanswered": [],
+  "answers": {
+    "overall_rating": {
+      "answer": "10",
+      "recorded_at": "2026-11-24T15:09:07.110112+00:00"
+    },
+    "usage_frequency": {
+      "answer": "daily",
+      "recorded_at": "2026-11-24T15:09:13.712669+00:00"
+    },
+    "best_part": {
+      "answer": "approachable and easy to use",
+      "recorded_at": "2026-11-24T15:09:22.570162+00:00"
+    },
+    "improvement": {
+      "answer": "improve customer service",
+      "recorded_at": "2026-11-24T15:09:46.714236+00:00"
+    },
+    "recommend": {
+      "answer": "8",
+      "recorded_at": "2026-11-24T15:10:02.945579+00:00"
+    }
+  }
+}

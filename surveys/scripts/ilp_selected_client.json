@@ -1,0 +1,42 @@
+{
+  "id": "ilp_selected_client",
+  "title": "ILP · Selected Client (aged 66) · Suitability",
+  "product": "Investment-Linked Policy",
+  "channel": "Face-to-face (home visit)",
+  "tags": [
+    "ILP",
+    "Selected Client",
+    "Vulnerable"
+  ],
+  "focus": "The client is a Selected Client (aged 62+ and more comfortable in Mandarin). Check Trusted Individual presence, the language used, and genuine comprehension. Assess whether an ILP with a long horizon is suitable for a retiree, or whether it was mis-sold without a proper review of retirement income needs.",
+  "profile": {
+    "client_name": "Lim Ah Kow",
+    "dob": "5 May 1960",
+    "age": 66,
+    "policy_name": "Legacy Invest-Link (demo plan)",
+    "insurer": "AIA Singapore",
+    "application_no": "AIA-ILP-239955",
+    "agent_name": "Kelvin Ong",
+    "premium": "$50,000",
+    "frequency": "single premium",
+    "term": "one-time payment, 10-year horizon",
+    "purchase_date": "15 November 2026",
+    "selected_client": true,
+    "language": "Mandarin, limited English"
+  },
+  "roleplay_tips": [
+    "Answer in Mandarin; Mei Ling should switch to Mandarin",
+    "Say your children were not there",
+    "Say the agent explained only in English",
+    "Describe the plan as 'like a fixed deposit, can take out anytime'",
+    "Say this is most of your CPF withdrawal money"
+  ],
+  "sections": [
+    "identity",
+    "selected_client",
+    "fna",
+    "product_ilp",
+    "commitments",
+    "closing"
+  ]
+}

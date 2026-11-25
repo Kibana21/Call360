@@ -1,0 +1,40 @@
+{
+  "id": "par_bancassurance",
+  "title": "Endowment · Bank branch · Deposit confusion",
+  "product": "Participating Endowment",
+  "channel": "Bancassurance (bank branch)",
+  "tags": [
+    "Par",
+    "Bancassurance"
+  ],
+  "focus": "Check whether the client was diverted from a fixed-deposit renewal into an endowment, and whether they understand it's insurance from an insurer, not a bank deposit: bonuses aren't guaranteed and early surrender loses money.",
+  "profile": {
+    "client_name": "Siti Rahmah binte Osman",
+    "dob": "21 January 1974",
+    "age": 52,
+    "policy_name": "SecureSaver 10 (demo plan)",
+    "insurer": "AIA Singapore",
+    "application_no": "AIA-END-240310",
+    "agent_name": "Rachel Tan",
+    "premium": "$20,000",
+    "frequency": "annually",
+    "term": "5 years (10-year maturity)",
+    "purchase_date": "19 November 2026",
+    "selected_client": false
+  },
+  "roleplay_tips": [
+    "Say you went to the bank to renew your fixed deposit",
+    "Say you thought the bank guarantees the money",
+    "Say you may need the money in 2 years for your son's university"
+  ],
+  "sections": [
+    "identity",
+    "channel_bank",
+    "fna",
+    "product_par",
+    "commitments",
+    "conduct",
+    "free_look",
+    "closing"
+  ]
+}
